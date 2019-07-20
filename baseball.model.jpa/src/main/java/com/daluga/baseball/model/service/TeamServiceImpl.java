@@ -1,5 +1,6 @@
 package com.daluga.baseball.model.service;
 
+import java.util.Optional;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,8 @@ public class TeamServiceImpl implements TeamService {
 	TeamRepository repository = null;
 	
 	public Team get(Integer id) {
-		return repository.findOne(id);
+		Optional<Team> team = repository.findById(id);
+		return team.orElse(null);
 	}
 
 	public Set<Team> getAll() {

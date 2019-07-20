@@ -7,7 +7,7 @@ public abstract class Domain {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 }

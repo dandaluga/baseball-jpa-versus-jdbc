@@ -7,12 +7,14 @@ import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.daluga.baseball.model.AbstractTestCase;
 
 public class TeamTest extends AbstractTestCase {
 
+    @Ignore
     @Test
     public void validate() {
             	
